@@ -17,4 +17,5 @@ export function loadPage() {
     content.appendChild(subtitle);
     content.appendChild(image);
     content.appendChild(text);
+    
 }
