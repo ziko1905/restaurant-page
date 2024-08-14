@@ -5,10 +5,18 @@ body {
 
 nav {
     background-color: rgb(50, 70, 12);
-    padding: 20px 0 0 0;
+    padding: 0 0 0 0;
 
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
-    gap: 20px;
+    gap: 70px;
+}
+
+header button {
+    font-size: large;
+    color: yellowgreen;
+    background-color: rgba(0, 0, 0, 0.514);
+    border: none;
+    padding: 20px 60px;
 }
