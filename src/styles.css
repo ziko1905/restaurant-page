@@ -25,3 +25,9 @@ header button.act {
     background-color: yellowgreen;
     color: rgba(0, 0, 0, 0.808);
 }
+
+#content > div {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
