@@ -4,7 +4,12 @@ const content = document.querySelector("#content");
 
 
 export let Functions = {
-    home: () => {
+    home: loadHome,
+    main: () => {console.log("Main")}, 
+    about: () => {console.log("About")},
+}
+
+function loadHome() {
     const title = document.createElement("h1");
     const subtitle = document.createElement("h3");
     const image = document.createElement("img");
@@ -18,10 +23,7 @@ export let Functions = {
     content.appendChild(title);
     content.appendChild(subtitle);
     content.appendChild(image);
-    content.appendChild(text);   
-    },
-    main: () => {console.log("Main")}, 
-    about: () => {console.log("About")},
+    content.appendChild(text);
 }
 
 export function cleanContent() {
