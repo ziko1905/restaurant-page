@@ -20,3 +20,8 @@ header button {
     border: none;
     padding: 20px 60px;
 }
+
+header button.act {
+    background-color: yellowgreen;
+    color: rgba(0, 0, 0, 0.808);
+}

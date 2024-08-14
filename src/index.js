@@ -5,9 +5,11 @@ function functionalizeBtns() {
     const buttons = document.querySelectorAll("button")
 
     for (let btn of buttons) {
+        
         btn.addEventListener("click", (e) => {
             cleanContent()
-            Functions[`${e.target.id}`]()
+            Functions[`${e.target.id}`]();
+            btn.setAttribute("class", "act");
         })
     }
 }
