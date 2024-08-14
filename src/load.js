@@ -19,7 +19,9 @@ export let Functions = {
     content.appendChild(subtitle);
     content.appendChild(image);
     content.appendChild(text);   
-}, 
+    },
+    main: () => {}, 
+    about: () => {},
 }
 
 export function cleanContent() {
