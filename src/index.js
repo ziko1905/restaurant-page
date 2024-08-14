@@ -1,5 +1,5 @@
 import "./styles.css";
-import { loadPage } from "./load";
+import { loadHome } from "./load";
 
 console.log("Hello, World!")
-loadPage()
+loadHome()

@@ -1,7 +1,7 @@
 import kebab from "./kebab.jpg"  
   
 
-export function loadPage() {
+export function loadHome() {
     const content = document.querySelector("#content");
     const title = document.createElement("h1");
     const subtitle = document.createElement("h3");
@@ -16,6 +16,5 @@ export function loadPage() {
     content.appendChild(title);
     content.appendChild(subtitle);
     content.appendChild(image);
-    content.appendChild(text);
-    
+    content.appendChild(text);   
 }
