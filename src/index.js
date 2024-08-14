@@ -6,9 +6,10 @@ function functionalizeBtns() {
 
     for (let btn of buttons) {
         btn.addEventListener("click", (e) => {
+            cleanContent()
             Functions[`${e.target.id}`]()
         })
     }
 }
 console.log("Hello, World!")
-loadHome()
+functionalizeBtns()

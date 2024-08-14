@@ -20,8 +20,8 @@ export let Functions = {
     content.appendChild(image);
     content.appendChild(text);   
     },
-    main: () => {}, 
-    about: () => {},
+    main: () => {console.log("Main")}, 
+    about: () => {console.log("About")},
 }
 
 export function cleanContent() {
