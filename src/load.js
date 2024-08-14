@@ -19,3 +19,7 @@ export function loadHome() {
     content.appendChild(text);   
 }
 
+export function cleanContent() {
+    content.textContent = ""
+}
+

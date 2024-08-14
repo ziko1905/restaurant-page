@@ -1,5 +1,5 @@
 import "./styles.css";
-import { loadHome } from "./load.js";
+import { loadHome, cleanContent } from "./load.js";
 
 console.log("Hello, World!")
 loadHome()
