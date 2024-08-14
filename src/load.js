@@ -2,7 +2,9 @@ import kebab from "./kebab.jpg"
   
 const content = document.querySelector("#content");
 
-export function loadHome() {
+
+export let Functions = {
+    home: () => {
     const title = document.createElement("h1");
     const subtitle = document.createElement("h3");
     const image = document.createElement("img");
@@ -17,6 +19,7 @@ export function loadHome() {
     content.appendChild(subtitle);
     content.appendChild(image);
     content.appendChild(text);   
+}, 
 }
 
 export function cleanContent() {
