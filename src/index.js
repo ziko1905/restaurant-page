@@ -19,3 +19,5 @@ function functionalizeBtns() {
 
 console.log("Hello, World!")
 functionalizeBtns()
+last.click()
+
