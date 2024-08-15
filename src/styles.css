@@ -37,6 +37,7 @@ header button.act {
 
     display: grid;
     justify-items: center;
+    gap: 40px;
 }
 
 h1 {
@@ -44,6 +45,7 @@ h1 {
 }
 
 h1, h3, p, .list, .card {
+    margin: 0;
     text-align: center;
     background-color: rgb(205, 255, 148);
     border-bottom: 2px solid rgb(23, 73, 0);
