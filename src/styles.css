@@ -72,7 +72,6 @@ li {
 }
 
 .card {
-    justify-self: start;
     width: 400px;
     padding: 10px;
 }
