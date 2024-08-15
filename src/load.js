@@ -34,24 +34,28 @@ function loadMenu() {
     const title = document.createElement("h1");
     const dishDiv = document.createElement("div")
     const dishList = document.createElement("ul");
-    const text = document.createElement("p");
 
     div.className = "about"
-    title.textContent = "Our Menu!";
-    dishDiv.className = "dish-div";
-    dishDiv.textContent = "Dishes: ";
-    for (let n of ["Kebab", "Kebab Salad", "Kebab Pizza", "Kebab Tortilla", "Kebab Spaghetti"]) {
-        const dish = document.createElement("li");
-        dish.textContent = n;
-        dishList.appendChild(dish)
-    }
-    dishDiv.appendChild(dishList)
-    text.textContent = "Want to try our brand new kebab? No problem! Just come visit us at 'random address'! We are open 24/7 and love serving our customers best kebab in town! Only one as well! :)";
-
     div.appendChild(title);
-    div.appendChild(dishDiv);
-    div.appendChild(text);
-    content.appendChild(div)
+    title.textContent = "Our Menu!";
+    for (let n = 0; n < 3; n++) {
+        const currDiv = document.createElement("div");
+        const currList = document.createElement("ul");
+        currDiv.className = "list";
+        currDiv.appendChild(currList)
+        currDiv.textContent = ["Dishes: ", "Sizes: ", "Spices: "][n]
+        for (let m of [["Kebab", "Kebab Salad", "Kebab Pizza", "Kebab Tortilla", "Kebab Spaghetti"], 
+                       ["Extra Small", "Small", "Medium", "Large", "Extra Large"],
+                       ["Tabasco", "Hot Sauce", "Mild Sauce", "Pepperoni", "Onions"]][n]) {
+            const li = document.createElement("li");
+            li.textContent = m;
+            currList.appendChild(li)
+        }
+        currDiv.append(currList)
+        div.append(currDiv)
+    }
+    
+    content.appendChild(div);
 }
 
 function loadAbout() {

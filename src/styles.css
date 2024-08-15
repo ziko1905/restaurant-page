@@ -43,7 +43,7 @@ h1 {
     margin-top: 0;
 }
 
-h1, h3, p, .dish-div {
+h1, h3, p, .list {
     text-align: center;
     background-color: rgb(205, 255, 148);
     border-bottom: 2px solid rgb(23, 73, 0);
@@ -51,8 +51,9 @@ h1, h3, p, .dish-div {
     padding: 1em;
 }
 
-.dish-div {
+.list {
     font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
 ul {
