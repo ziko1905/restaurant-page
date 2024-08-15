@@ -43,10 +43,25 @@ h1 {
     margin-top: 0;
 }
 
-h1, h3, p {
+h1, h3, p, ul {
     text-align: center;
     background-color: rgb(205, 255, 148);
     border-bottom: 2px solid rgb(23, 73, 0);
     border-radius: 5px 5px 0 0;
     padding: 1em;
+}
+
+ul {
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+li {
+    background-color: rgb(23, 73, 0);
+    color: rgb(236, 255, 214);
+    padding: 10px 10px;
+    border-bottom: 3px solid rgb(236, 255, 214);
 }
