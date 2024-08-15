@@ -5,7 +5,7 @@ const content = document.querySelector("#content");
 
 export let Functions = {
     home: loadHome,
-    main: loadMain, 
+    menu: loadMenu, 
     about: loadAbout,
 }
 
@@ -29,7 +29,7 @@ function loadHome() {
     content.appendChild(div)
 }
 
-function loadMain() {
+function loadMenu() {
     const div = document.createElement("div");
     const title = document.createElement("h1");
     const subtitle = document.createElement("h3");
